@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
-import Animations.TestAnimation;
+import Animations.ExampleAnimation;
 import GUI.GUIEvent;
 
 public class TestSquare extends GUIElement{
@@ -21,7 +21,7 @@ public class TestSquare extends GUIElement{
 		g.dispose();
 		
 		super.setImage(img);
-		super.addAnimation(new TestAnimation(200, 5));
+		super.addAnimation(new ExampleAnimation(200, 5));
 	}
 	
 	@Override
