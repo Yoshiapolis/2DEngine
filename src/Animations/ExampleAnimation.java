@@ -1,11 +1,11 @@
 package Animations;
 
-public class TestAnimation extends Animation {
+public class ExampleAnimation extends Animation {
 	
 	static int[] tags = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 	int range;
 	
-	public TestAnimation(int range, int duration) {
+	public ExampleAnimation(int range, int duration) {
 		super(tags, duration, true);
 		this.range = range;
 	}
@@ -22,15 +22,6 @@ public class TestAnimation extends Animation {
 		super.output[6] = (float)Math.cos(super.progress);
 		super.output[7] = (float)Math.sin(super.progress);
 		super.output[8] = 20f/255f;
-	}
-	
-	private float map(float x, int minImage, int maxImage, float maxInput) {
-		float absMax = maxImage-minImage;
-		float convFactor = absMax/maxInput;
-		float image =  (x * convFactor + minImage);
-		
-		return image;
-		
 	}
 	
 }
